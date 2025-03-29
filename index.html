@@ -10,104 +10,40 @@
   <!-- page content goes into <body> -->
   <body>
     <div id="logoBar">
-      <h1>Accessible Components: Dropdown Case Study</h1>
-      <h3> In this case study, I conducted research, analysis, and proposed a redesign of dropdown components across multiple applications. </h3>
-      <h2> Why dropdowns? </h2>
-      <h3>Dropdown menus are widely used UI components, yet their accessibility varies across applications. Many dropdowns lack adequate support for keyboard navigation, screen readers, and visual cues for different states, making them difficult for users with disabilities to navigate. </h3>
-      <h2>Component Analysis</h2>
-      <h3>I will analyze existing dropdown implementations in Google Docs, Slack, and Instagram. The scope of this case study is limited to dropdown with a limited set of options. My findings are summarized in the input and output tables below. </h3>
-
-
-      <div id="divideSection">
-
-      <div id="leftSide">
-        <div class="column">
-          <img src="./assets/docs/docs_logo.png" alt="Google Docs logo" width="110"/>
-          <h3 class="underline">Google Docs</h3>
-          <img src="./assets/docs/default.png" alt="Google Docs dropdown component default" width="200"/>
-          <img src="./assets/docs/opened.png" alt="Google Docs dropdown component opened"width="200"/>
-        </div>
-        <div class="column">
-          <img src="./assets/slack/slack_logo.png" alt="Slack logo" width="150"/>
-          <h3 class="underline">Slack</h3>
-          <img src="./assets/slack/default.png" alt="Slack dropdown component default" width="200"/>
-          <img src="./assets/slack/opened.png" alt="Slack dropdown component opened" width="200"/>
-        </div>
-        <div class="column">
-          <img src="./assets/instagram/ig_logo.png" alt="Instagram logo" width="150"/>
-          <h3 class="underline">Instagram</h3>
-          <img src="./assets/instagram/default.png" alt="Instagram dropdown component default" width="200"/>
-          <img src="./assets/instagram/opened.png" alt="Instagram dropdown component opened" width="200"/>
-        </div>
-      </div>
-
-      <div id="rightSide">
-        <div class="category">
-          <h3 class="underline">Inputs</h3>
-          <img src="./assets/tables/inputs.png" alt="Inputs diagram" width="900"/>
-        </div>
-        <div class="category">
-          <h3 class="underline">Outputs</h3>
-          <img src="./assets/tables/outputs.png" alt="Outputs diagram" width="900"/>
-        </div>
-      </div>
-    </div>
-      <h2>State Model Development</h2>
-        <h3>Mapping transitions between different states of the dropdown component for both keyboard and mouse users of the application. The revised version (changes shown in red) proposes a key change: an <strong>improved hover state</strong> that makes the selection process more efficient. </h3>
-        <div id="stateModelContainer">
-          <div class="column">
-            <img src="./assets/state-models/keyboard-user.png" alt="Original keyboard user" class="state-image"/>
-            <img src="./assets/state-models/revised-keyboard.png" alt="Revised keyboard user" class="state-image"/>
+      <h1 class="limelight text-2xl md:text-5xl xl:text-7xl text-black">Responsive Redesign</h1>
+          <h3>This case study focuses on redesigning an existing webpage to improve its usability, accessibility, and responsiveness. By analyzing the current interface and identifying key issues, I aim to create a more intuitive and visually appealing design that enhances the user experience across different screen sizes. </h3>
+        
+          <h2> Webpage Rationale </h2>
+          <h3>I selected the website for Heng, a local restaurant I frequently visit. Given its small-scale operations, the website is fairly basic, focusing primarily on practical features like online ordering and delivery, with minimal interactive content. </h3>
+          <img src="./assets/webpage/old-website.png" alt="Old website screenshot" width="700" />  
+          <div class="link">
+            <a href="https://www.hengpvd.com/home">Heng PVD Website</a>
+          </div>
+          <h3>The simplicity of the site makes it an ideal candidate for a redesign, as it allows for substantial enhancements that could greatly improve its appeal. There is significant room for improvement in terms of visual design, user experience, and overall functionality. </h3>
+        
+          <h2>Usability Analysis</h2>
+          <img src="./assets/webpage/usability-table.png" alt="Usability table" width="1100" />  
+          <h3></h3>
+          <h2>Visual Design Style Guide</h2>
+          <img src="./assets/webpage/vdg.png" alt="Visual Design Style Guide" width="900" class="border-2"/>  
+          <div class="list-container">
+          <ul> 
+            <li>Standardizing fonts and colors for consistency</li>
+            <li>Enhancing buttons and navigation for a more intuitive flow</li>
+            <li>Improving accessibility by addressing font and structural inconsistencies</li>
+          </ul>
           </div>
 
-          <div class="column">
-            <img src="./assets/state-models/mouse-user.png" alt="Original mouse user" class="state-image"/>
-            <img src="./assets/state-models/revised-mouse.png" alt="Revised mouse user" class="state-image"/>
+          <h2>Mockups</h2>
+          <img src="./assets/webpage/mockup1.png" alt="Mockup for 3 devices">
+
+          <h2>Redesigned Page</h2>
+          <div class="link">
+            <a href="https://miahnguyen.github.io/redesigned-webpage/">Link to Redesigned Webpage</a>
           </div>
-        </div>
-      <h2>Component Redesign</h2>
-      <h3><p><strong>🔹 Key Changes:</strong> Higher contrast, improved focus indicators, clearer selection.</p></h3>
-
-      <img id="redesignImage" src="./assets/redesign/redesign.png" alt="Redesigned component" style="display: block; margin: 0 auto;" width="500"/>
-
-      <div class="text-container">
-      <h2>Reflection</h2>
-      <ul>
-      <li><strong>Accessibility:</strong> 
-        <ul>
-          <li>Provided clear visual indicators (e.g., borders, highlights) to help users identify interactive elements.</li>
-        </ul>
-      </li>
-      <li><strong>Usability:</strong> 
-        <ul>
-          <li>Ensured keyboard navigability and that screen reader-friendly labels are used, allowing users to tab through options and make selections.</li>
-        </ul>
-      </li>
-      <li><strong>Improve accessibility gaps:</strong>
-        <ul>
-          <li>Better contrast and visibility: The original grey dropdown blended into the background, making it difficult for low-vision users to identify. Changing it to white significantly improves readability.</li>
-          <li>Stronger visual feedback for selection: The open state now has a clearer focus shadow, ensuring users understand which option is currently active.</li>
-        </ul>
-      </li>
-      <li><strong>Mismatch solution:</strong>
-        <ul>
-          <li>Many dropdowns don’t provide enough visual contrast, making them inaccessible for users with low vision or color blindness. By increasing the contrast, my design ensures better usability for everyone.</li>
-          <li>For neurodivergent users who rely on consistent and strong visual cues, the new dropdown state provides a clearer and more predictable interaction.</li>
-        </ul>
-      </li>
-      <li><strong>Keyboard inputs:</strong>
-        <ul>
-          <li>Having the option for users to navigate the site entirely by keyboard makes the site significantly more accessible, especially for users that struggle with precise movements required by mouse and touchpad.</li>
-          <li>At the same time, some keyboard shortcuts are complex and require multiple keys to be simultaneously pressed, which may unintentionally exclude users that cannot perform complex motor tasks.</li>
-        </ul>
-      </li>
-      <li><strong>Prioritization:</strong> 
-        <ul>
-          <li>Many components are designed with mouse or touch users in mind, leaving keyboard users with a subpar experience when it comes to navigating the different functionalities of a webpage / application.</li>
-        </ul>
-      </li>
-    </ul>
-    </div>
+          <h3>In this redesigned version, I focused on improving responsiveness and accessibility through a series of thoughtful changes aimed at creating a more user-friendly experience, all while maintaining the original feel of the website. This includes implementing a responsive layout with flexbox for all screen sizes and maintaining consistency in color contrast and fonts throughout the pages.</h3>
+          <img src="./assets/webpage/new.png" alt="Redesigned webpage">
+          <h3>Some additional design choices include a scrolling gallery of photos from the restaurant, improving the previous static display of generic food images. The ordering buttons features good contrast, and improves the learnability of the website by having icons representing external links.</h3>
 
   </body>
   <footer>
